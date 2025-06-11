@@ -10,5 +10,9 @@ class EventManager {
    deleteEvent(id: string): void {
     this.events.delete(id);
   }
+    
+   eventsByCategory(category: string): IEvent[] {
+    return Array.from(this.events.values()).filter((event) => event.category === category);
 
+}
 }

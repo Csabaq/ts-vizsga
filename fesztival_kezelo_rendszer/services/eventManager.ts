@@ -1,7 +1,8 @@
 import { IEvent } from "../models/interfaces";
 import { Event } from "../models/events";
+import { IParticipants } from "../models/interfaces";
 
-class EventManager {
+export class EventManager {
     private events: Map<string, IEvent> = new Map();
 
     addEvent(event: IEvent): void {
@@ -36,3 +37,4 @@ class EventManager {
         }
     }
 }
+

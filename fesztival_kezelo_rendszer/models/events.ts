@@ -1,6 +1,6 @@
-import { IParticipants } from "./interfaces";
+import { IEvent, IParticipants } from "./interfaces";
 
-export class Event {
+export class Event implements IEvent{
     constructor(
         public id: string,
         public name : string,  

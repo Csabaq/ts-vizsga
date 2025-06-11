@@ -1,0 +1,23 @@
+{
+  "name": "ts-vizsga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Csabaq/ts-vizsga.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Csabaq/ts-vizsga/issues"
+  },
+  "homepage": "https://github.com/Csabaq/ts-vizsga#readme",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}

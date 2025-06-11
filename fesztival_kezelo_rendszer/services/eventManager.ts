@@ -1,4 +1,5 @@
 import { IEvent } from "../models/interfaces";
+import { Event } from "../models/events";
 
 class EventManager {
     private events: Map<string, IEvent> = new Map();
@@ -15,4 +16,23 @@ class EventManager {
     return Array.from(this.events.values()).filter((event) => event.category === category);
 
 }
+    getEvent(id: string): IEvent | undefined {
+        return this.events.get(id);
+  }
+    listEvents():IEvent[]{
+         return Array.from(this.events.values());
+  }
+    
+    updateEvent(id : string, updatedEvent: IEvent): void{
+        if ( this.events.has(id)){
+            this.events.set(id, new Event(
+                updatedEvent.id,
+                updatedEvent.name,
+                updatedEvent.category,
+                updatedEvent.date,
+                updatedEvent.location,
+                updatedEvent.participants
+            ));
+        }
+    }
 }

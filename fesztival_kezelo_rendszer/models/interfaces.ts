@@ -4,6 +4,7 @@ export interface IEvent {
   date: Date;
   category: string;
   participants: Map<string, IParticipants>;
+  location: string;
 }
 
 export interface IParticipants {
